@@ -1,0 +1,14 @@
+data:
+  train_path: data/raw/twitter_training.csv
+  test_path: data/raw/twitter_validation.csv
+
+artifacts:
+  model_path: artifacts/sentiment_analysis.keras
+  tokenizer_path: artifacts/tokenizer.pkl
+  max_len_path: artifacts/max_len.pkl
+  label_path: artifacts/label_classes.pkl
+
+model:
+  embedding_dim: 128
+  epochs: 10
+  batch_size: 128
